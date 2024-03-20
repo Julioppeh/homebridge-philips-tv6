@@ -95,7 +95,7 @@ class PhilipsTV {
     };
 
     sendKey = key => this.api("input/key", {key});
-    setChannel = ccid => this.api("activities/tv", {preset: {ccid}, channelList: {id: "1",version:"26"}});
+    setChannel = ccid => this.api("activities/tv", {channel: {ccid}, channelList: {id: "1"}});
     launchApp = app => this.api("activities/launch", app);
     getChannelList = () => this.api("channeldb/tv/channelLists/all").then((response) => {
         if (response) {
