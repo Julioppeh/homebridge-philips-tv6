@@ -142,7 +142,8 @@ class PhilipsTV {
 //            await this.sendKey("Digit" + input.channel);
 //            await this.sendKey("Confirm");
             const ccid = await this.presetToCCid(input.channel);
-            await this.setChannel(ccid);
+            // await this.setChannel(ccid);
+            await this.setChannel(input.channel);
         } else if (input.launch) {
             await this.launchApp(input.launch);
         } else {
