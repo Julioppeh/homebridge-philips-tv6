@@ -1,6 +1,6 @@
 {
   "name": "homebridge-philips-tv6-julioppeh",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "Julioppeh",
   "description": "Homebridge Plugin for Philips Android TV API v6+, with modifications for App Launch",
   "license": "ISC",
